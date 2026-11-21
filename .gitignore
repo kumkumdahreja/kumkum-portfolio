@@ -1,0 +1,13 @@
+node_modules/
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+.DS_Store
+# full-size originals (not published)
+photos-original/
+.env*.local
+.env
+# private collab data (payments, deliverables) — never commit
+supabase/collab-deals.sql
+scripts/make-deals.mjs
