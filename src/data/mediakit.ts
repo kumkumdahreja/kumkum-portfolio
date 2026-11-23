@@ -2,52 +2,57 @@
 // This file is the fallback used until Supabase is connected; after that,
 // update the numbers from /admin/media-kit.
 export const mediakit = {
-  period: "21 Oct – 21 Nov 2026",
-  views: 77617,
-  viewsDelta: 65.2,
-  reach: 30307,
-  reachDelta: 78.3,
-  followers: 799,
-  followersDelta: 3.6,
-  profileVisits: 2451,
-  linkTaps: 41,
-  followerViews: 24041,
-  nonFollowerViews: 53177,
+  period: "22 Oct – 22 Nov 2026",
+  views: 150843,
+  viewsDelta: 148.9,
+  reach: 93172,
+  reachDelta: 320.6,
+  followers: 797,
+  followersDelta: 3.4,
+  profileVisits: 2596,
+  linkTaps: 42,
+  followerViews: 26142,
+  nonFollowerViews: 124276,
   formats: [
-    { label: "Reels", views: 53300, interactions: 2400 },
-    { label: "Stories", views: 14500, interactions: 798 },
-    { label: "Posts", views: 9300, interactions: 331 },
+    { label: "Reels", views: 55800, interactions: 2500 },
+    { label: "Stories", views: 14900, interactions: 815 },
+    { label: "Posts", views: 10500, interactions: 406 },
   ],
-  topReels: [109000, 14100, 12200, 6200, 5900, 3900], // views, last 180 days
+  topReels: [109000, 71000, 12200, 6300, 3900, 3600], // views, last 180 days
   audience: {
     gender: [
       { label: "Men", value: 65 },
-      { label: "Women", value: 34 },
+      { label: "Women", value: 35 },
     ],
     age: [
       { label: "13–17", value: 2.8 },
-      { label: "18–24", value: 39.6 },
-      { label: "25–34", value: 42.4 },
-      { label: "35–44", value: 9.4 },
+      { label: "18–24", value: 39.3 },
+      { label: "25–34", value: 42.3 },
+      { label: "35–44", value: 9.7 },
       { label: "45–54", value: 3.7 },
-      { label: "55+", value: 2.2 },
+      { label: "55–64", value: 1.1 },
+      { label: "65+", value: 1.1 },
     ],
     cities: [
-      { label: "Delhi", value: 7.5 },
-      { label: "Vrindavan", value: 6.4 },
+      { label: "Mathura", value: 6.9 },
+      { label: "Vrindavan", value: 6.9 },
+      { label: "Delhi", value: 6.9 },
       { label: "Agra", value: 6.4 },
-      { label: "Greater Noida", value: 6.4 },
-      { label: "Mathura", value: 6.2 },
+      { label: "Greater Noida", value: 6.1 },
     ],
     languages: [
-      { label: "English", value: 50.1 },
-      { label: "Hindi", value: 47.1 },
+      { label: "English", value: 49.4 },
+      { label: "Hindi", value: 47.6 },
+      { label: "Bengali", value: 1.0 },
       { label: "Gujarati", value: 1.0 },
+      { label: "Marathi", value: 0.3 },
     ],
     countries: [
-      { label: "India", value: 95.5 },
+      { label: "India", value: 95.6 },
       { label: "USA", value: 0.9 },
       { label: "Pakistan", value: 0.9 },
+      { label: "Bangladesh", value: 0.5 },
+      { label: "Saudi Arabia", value: 0.4 },
     ],
     activeHours: "6 – 9 PM",
     activeDays: ["Tue", "Wed", "Thu"],
@@ -62,7 +67,7 @@ export const mediakit = {
 
 export type MediaKit = typeof mediakit;
 
-/** 77617 -> "77.6K", 109000 -> "109K", 799 -> "799" */
+/** 150843 -> "150.8K", 109000 -> "109K", 799 -> "799" */
 export const compact = (n: number) => {
   if (n < 1000) return `${n}`;
   const k = Math.round(n / 100) / 10;
